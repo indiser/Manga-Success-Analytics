@@ -13,7 +13,7 @@
 ║  • Quality vs Popularity insights                                         ║
 ║  • Genre recommendations engine                                           ║
 ║                                                                            ║
-║  Author: Analytics Team | Version: 2.0 (Industry Edition)                ║
+║  Author: Indiser | Version: 2.0 (Industry Edition)                        ║
 ╚════════════════════════════════════════════════════════════════════════════╝
 """
 
@@ -918,4 +918,5 @@ def run_correlation_engine():
 # ════════════════════════════════════════════════════════════════════════════
 
 if __name__ == "__main__":
+
     run_correlation_engine()
