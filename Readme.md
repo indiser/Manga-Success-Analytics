@@ -368,8 +368,8 @@ This project uses **two complementary data fetching approaches** to gather manga
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/manga-success-analytics.git
-cd manga-success-analytics
+git clone https://github.com/indiser/Manga-Success-Analytics.git
+cd Manga-Success-Analytics
 
 # Install dependencies
 pip install pandas numpy matplotlib seaborn scikit-learn scipy
@@ -620,7 +620,7 @@ MIT License - Free for commercial and personal use
 
 ## 👨‍💻 Author
 
-**Analytics Team** | January 2026
+**Indiser** | January 2026
 
 *Building data-driven insights for creative industries*
 
@@ -637,5 +637,6 @@ Open an issue or reach out with suggestions for improvements!
 ### ⭐ If this project helped you, please consider starring it!
 
 **[GitHub](https://github.com) • [LinkedIn](https://linkedin.com) • [Portfolio](https://portfolio.com)**
+
 
 </div>
