@@ -1,21 +1,21 @@
-"""
+print("""
 ╔════════════════════════════════════════════════════════════════════════════╗
 ║              MANGA SUCCESS ANALYTICS ENGINE - INDUSTRY EDITION             ║
 ║                                                                            ║
-║  A comprehensive data analysis and predictive modeling platform for       ║
-║  understanding manga success drivers and forecasting future trends.       ║
+║  A comprehensive data analysis and predictive modeling platform for        ║
+║  understanding manga success drivers and forecasting future trends.        ║
 ║                                                                            ║
 ║  Features:                                                                 ║
-║  • Statistical correlation analysis                                       ║
-║  • Genre trend prediction (5-year forecast)                              ║
-║  • Multi-dimensional visualizations                                       ║
-║  • Demographic impact analysis                                            ║
-║  • Quality vs Popularity insights                                         ║
-║  • Genre recommendations engine                                           ║
+║  • Statistical correlation analysis                                        ║
+║  • Genre trend prediction (5-year forecast)                                ║
+║  • Multi-dimensional visualizations                                        ║
+║  • Demographic impact analysis                                             ║
+║  • Quality vs Popularity insights                                          ║
+║  • Genre recommendations engine                                            ║
 ║                                                                            ║
-║  Author: Indiser | Version: 2.0 (Industry Edition)                        ║
+║  Author: Indiser | Version: 2.0 (Industry Edition)                         ║
 ╚════════════════════════════════════════════════════════════════════════════╝
-"""
+""")
 
 import pandas as pd
 import numpy as np
@@ -918,5 +918,4 @@ def run_correlation_engine():
 # ════════════════════════════════════════════════════════════════════════════
 
 if __name__ == "__main__":
-
     run_correlation_engine()
