@@ -11,7 +11,7 @@
 
 ## 🚀 Overview
 
-**Manga Success Analytics Engine** is a comprehensive data science platform that analyzes **2,539 manga** across **70 unique genres** to identify success drivers, predict market trends, and provide strategic recommendations for creators.
+**Manga Success Analytics Engine** is a comprehensive data science platform that analyzes **89,704 manga** across **70 unique genres** to identify success drivers, predict market trends, and provide strategic recommendations for creators.
 
 This industry-grade solution goes **21.8x beyond** basic correlation analysis, delivering:
 - ✅ **9 independent analysis modules** with professional architecture
@@ -142,7 +142,7 @@ This project uses **two complementary data fetching approaches** to gather manga
 **Optimized for bulk data collection with intelligent caching.**
 
 **Key Features:**
-- 🎯 **Dual Tracking System**: Maintains `good_ids.txt` and `bad_ids.txt` files
+- 🎯 **Dual Tracking System**: Maintains `good_ids_1.txt` and `bad_ids_1.txt` files
 - 💾 **O(1) Lookup Speed**: Uses Python sets for instant ID checks (no repeated API calls)
 - 🚀 **Resume-Friendly**: Never wastes API calls on known bad IDs
 - 📊 **Persistent History**: Saves progress immediately to disk after each successful fetch
@@ -168,9 +168,9 @@ This project uses **two complementary data fetching approaches** to gather manga
 - 🔧 **Configuration**: `LOW_RANGE=1`, `HIGH_RANGE=60000`, `TARGET_COUNT=10000`
 
 **Output Files:**
-- `manga_data.jsonl` - Final dataset (newline-delimited JSON)
-- `good_ids.txt` - Whitelist of successful manga IDs
-- `bad_ids.txt` - Blacklist of 404 (non-existent) manga IDs
+- `manga_data_full_1.jsonl` - Final dataset (newline-delimited JSON)
+- `good_ids_1.txt` - Whitelist of successful manga IDs
+- `bad_ids_1.txt` - Blacklist of 404 (non-existent) manga IDs
 
 ---
 
@@ -205,7 +205,7 @@ This project uses **two complementary data fetching approaches** to gather manga
 - 💾 **Memory Footprint**: Low (loads minimal history)
 
 **Output Files:**
-- `manga.jsonl` - Final dataset (newline-delimited JSON)
+- `manga_data_full_1.jsonl` - Final dataset (newline-delimited JSON)
 - (In-memory `seen_ids` set tracks progress during execution)
 
 ---
@@ -381,8 +381,8 @@ python correlation_engine.py
 ### **What Happens When You Run It**
 
 ```
-✓ Loads 3,589 manga records
-✓ Cleans & validates data (2,539 valid entries)
+✓ Loads 89,703 manga records
+✓ Cleans & validates data
 ✓ Engineers 79 features (70 genres + 5 demographics)
 ✓ Generates 6 visualizations
 ✓ Outputs 100+ insights
@@ -403,7 +403,7 @@ Generated Files:
 | File | Purpose | Lines |
 |------|---------|-------|
 | `correlation_engine.py` | Main analysis script | 874 |
-| `final_manga_dataset_clean.csv` | Clean dataset (2,539 records) | - |
+| `final_manga_dataset_clean.csv` | Clean dataset | - |
 | `ANALYSIS_SUMMARY.md` | Detailed findings | - |
 | `CODE_STRUCTURE.md` | Technical documentation | - |
 | `QUICK_START.md` | Quick reference guide | - |
@@ -571,7 +571,6 @@ manga-success-analytics/
     ├── slower_fetch_manga.py          # Alternative fetcher
     ├── json_to_csv.py                 # Format conversion
     ├── merge_csvs.py                  # Data consolidation
-    └── manga_dataset1.csv, manga_dataset2.csv, etc.
 ```
 
 ---
@@ -640,3 +639,4 @@ Open an issue or reach out with suggestions for improvements!
 
 
 </div>
+
